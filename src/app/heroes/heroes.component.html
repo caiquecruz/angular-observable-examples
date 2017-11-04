@@ -1,16 +1,5 @@
-<br>
-<br>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let heroe of listHeroes.heroes">
-        <td>{{heroe.id}}</td>
-        <td>{{heroe.name}}</td>
-      </tr>
-    </tbody>
-  </table>
+<h1 class="text-center">Dota 2 Heroes API</h1>
+<p-dataTable #dataTable [value]="listHeroes.heroes" tableStyleClass="table table-striped table-bordered" cellspacing="0">
+  <p-column field="id" header="ID"></p-column>
+  <p-column field="name" header="NAME"></p-column>
+</p-dataTable>
